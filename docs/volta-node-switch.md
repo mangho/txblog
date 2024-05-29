@@ -1,11 +1,14 @@
 ### 使用 Volta 实现 Node.js 多项目开发环境的自动切换
 
 #### 1. 安装 Volta
-首先，需要安装 Volta。可以使用以下命令安装：
+
+##### 首先，需要安装 Volta。linux可以使用命令安装：
 
 ```sh
 curl https://get.volta.sh | bash
 ```
+
+##### windows需要去官网下载安装文件安装
 
 安装后把 Volta 添加到系统 PATH 中。
 
