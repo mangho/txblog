@@ -38,6 +38,7 @@ export default defineConfig({
       {
         text: '技术要掌握',
         items: [
+          { text: 'Volta对于Node.js的妙用', link: '/volta-node-switch' },
           { text: '用vue做一个DAPP', link: '/vue-dapp' },
         ],
       },
