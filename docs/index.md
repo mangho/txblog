@@ -26,6 +26,6 @@ features:
 ::: tip 案例
 
 - [formily 动态表单](/tx-showcase/formily){target="_blank"}
-- [uniapp 电商](/tx-showcase/bbyx)
-- [three.js 室内](/tx-showcase/threejs)
+- ~~[uniapp 电商](/tx-showcase/bbyx)~~(待上传)
+- ~~[three.js 室内](/tx-showcase/threejs)~~(待上传)
   :::
