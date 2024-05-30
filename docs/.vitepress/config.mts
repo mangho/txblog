@@ -33,6 +33,7 @@ export default defineConfig({
         text: '问题要解决',
         items: [
           { text: 'docker开发环境下vite热重载无效', link: '/docker-vite' },
+          { text: '磁盘结构损坏且无法读取', link: '/disk-damage' },
         ],
       },
       {

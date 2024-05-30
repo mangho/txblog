@@ -1,4 +1,4 @@
-要用 Vue.js 开发一个 Dapp 应用，您需要结合以太坊等区块链平台和智能合约来实现。以下是一个简单的指南，帮助您开始用 Vue.js 开发一个 Dapp 应用：
+要用 Vue.js 开发一个 Dapp 应用，需要结合以太坊等区块链平台和智能合约来实现。以下是简单的指南
 
 ### 先决条件
 
@@ -14,7 +14,7 @@ vue create my-dapp
 cd my-dapp
 ```
 
-选择默认的 Vue 3 模板或您喜欢的其他模板。
+选择默认的 Vue 3 模板或其他模板。
 
 ### 步骤 2：安装 Web3.js
 
@@ -26,7 +26,7 @@ npm install web3
 
 ### 步骤 3：编写智能合约
 
-在您的项目中创建一个智能合约文件 `contracts/MyContract.sol`，示例如下：
+在项目中创建一个智能合约文件 `contracts/MyContract.sol`，示例如下：
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -53,7 +53,7 @@ contract MyContract {
 truffle init
 ```
 
-编辑 `truffle-config.js` 文件，配置您的网络（如本地开发网络、Rinkeby 测试网等）。
+编辑 `truffle-config.js` 文件，配置网络（如本地开发网络、Rinkeby 测试网等）。
 
 编写部署脚本 `migrations/2_deploy_contracts.js`：
 
@@ -176,8 +176,8 @@ export default {
 npm run serve
 ```
 
-打开浏览器，连接 MetaMask 到正确的网络，您应该可以看到您的 Dapp 应用运行并与智能合约交互。
+打开浏览器，连接 MetaMask 到正确的网络，可以看到 Dapp 应用运行并与智能合约交互。
 
 ### 总结
 
-通过以上步骤，您可以使用 Vue.js 开发一个简单的 Dapp 应用。这只是一个基本的入门示例，实际项目可能会更复杂，需要考虑更多的安全性、用户体验等方面。希望这能帮助您开始开发自己的 Dapp 应用。
+通过以上步骤学习使用 Vue.js 开发一个简单的 Dapp 应用。这只是一个基本的入门示例，实际项目可能会更复杂，需要考虑更多的安全性、用户体验等方面。
