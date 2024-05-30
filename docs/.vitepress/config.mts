@@ -61,7 +61,7 @@ export default defineConfig({
     sidebarMenuLabel: "菜单",
     returnToTopLabel: "返回顶部",
     notFound: {
-      title: "Ops,你来的了知识的荒原！",
+      title: "Ops,你来到了知识的荒原！",
       quote: "页面找不到了，返回，或者看看其他的？",
       linkLabel: "返回首页",
       linkText: "首页",
