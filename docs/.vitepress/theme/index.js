@@ -6,9 +6,9 @@ import './custom.css'
 export default {
   extends: DefaultTheme,
   Layout:CusomFooter,
-  // Layout() {
-  //   return h(DefaultTheme.Layout, null, {
-  //     'layout-bottom': () => h(CusomFooter)
-  //   })
-  // }
+  Layout() {
+    return h(DefaultTheme.Layout, null, {
+      'layout-bottom': () => h(CusomFooter)
+    })
+  }
 }
