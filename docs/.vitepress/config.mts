@@ -6,6 +6,10 @@ export default defineConfig({
   title: "Mangho Blog",
   description: "mangho的后花园",
   cleanUrls: true,
+  head: [
+    ['link', { rel: 'icon',type:'image/svg+xml', href: '/vite.svg' }]
+    // ['link', { rel: 'icon', href: '/favion.ico' }]
+  ],
   ignoreDeadLinks: [
     // 自定义函数，忽略所有包含 "ignore "的链接
     (url) => {
