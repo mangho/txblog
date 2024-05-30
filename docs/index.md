@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 'Mangho'
   text: 'blog'
-  tagline: 码 要 优 雅 活 要 好
+  tagline: 优 雅 码， 庸 俗 活
   actions:
     - theme: brand
       text: 简介

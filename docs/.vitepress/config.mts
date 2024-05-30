@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   lang: "zh-CN",
   title: "我的Mangho Blog",
-  description: "码 要 优 雅 活 要 好",
+  description: "mangho的后花园",
   cleanUrls: true,
   ignoreDeadLinks: [
     // 自定义函数，忽略所有包含 "ignore "的链接
