@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "zh-CN",
-  title: "我的Mangho Blog",
+  title: "Mangho Blog",
   description: "mangho的后花园",
   cleanUrls: true,
   ignoreDeadLinks: [
@@ -48,6 +48,10 @@ export default defineConfig({
       },
       { icon: "twitter", link: "..." },
     ],
+    docFooter: {
+      prev: "上一篇",
+      next: "下一篇",
+    },
     darkModeSwitchLabel: "主题",
     lightModeSwitchTitle: "辉日",
     darkModeSwitchTitle: "暗夜",
