@@ -39,7 +39,7 @@ export default defineConfig({
       },
     ],
     footer: {
-      message: "vitepress驱动",
+      message: '<a href="https://vitepress.dev" target="blank">vitepress</a>驱动',
       copyright: "Copyright © 2022-present Mangho",
     },
     socialLinks: [
