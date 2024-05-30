@@ -38,7 +38,10 @@ export default defineConfig({
         ],
       },
     ],
-
+    footer: {
+      message: "vitepress驱动",
+      copyright: "Copyright © 2022-present Mangho",
+    },
     socialLinks: [
       {
         icon: {
