@@ -1,6 +1,6 @@
-要用 Vue.js 开发一个 Dapp 应用，需要结合以太坊等区块链平台和智能合约来实现。以下是简单的指南
+要用 Vue.js 开发一个 Dapp 应用，需要结合以太坊等区块链平台和智能合约来实现。以下是简单指南
 
-### 先决条件
+### 前置准备
 
 1. **Node.js 和 npm**：确保已安装 Node.js 和 npm。
 2. **Vue CLI**：通过 `npm install -g @vue/cli` 安装 Vue CLI。
