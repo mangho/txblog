@@ -5,9 +5,10 @@ import './custom.css'
 
 export default {
   extends: DefaultTheme,
-  Layout() {
-    return h(DefaultTheme.Layout, null, {
-      'layout-bottom': () => h(CusomFooter)
-    })
-  }
+  // 自定义footer
+  // Layout() {
+  //   return h(DefaultTheme.Layout, null, {
+  //     'layout-bottom': () => h(CusomFooter)
+  //   })
+  // }
 }
