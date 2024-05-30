@@ -5,7 +5,8 @@ layout: home
 hero:
   name: 'Mangho'
   text: 'blog'
-  tagline: 优 雅 码， 庸 俗 活
+#   tagline: 优 雅 码， 庸 俗 活
+  tagline: Code with grace, Live with gusto.
   actions:
     - theme: brand
       text: 简介
@@ -16,7 +17,7 @@ hero:
 
 features:
   - title: Vue
-    details: 熟练掌握vue2, vue3, uniapp, ElementUI, ant design for Vue, echarts
+    details: 熟练掌握vue2, vue3, uniapp,axios, pinia, ElementUI, ant design, echarts
   - title: DevOps
     details: docker, jenkins, stable diffusion, chatGPT
   - title: formily
