@@ -8,6 +8,14 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/vite.svg" }],
+    [
+      "script",
+      {
+        // src: "https://cdn.vercel-insights.com/v1/analytics.js",
+        src: "https://cdn.vercel-insights.com/_vercel/insights/script.js",
+        // src: "/_vercel/insights/script.js",
+      },
+    ],
     // ['link', { rel: 'icon', href: '/favion.ico' }]
   ],
   ignoreDeadLinks: [
