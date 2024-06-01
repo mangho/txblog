@@ -8,6 +8,7 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/vite.svg" }],
+    //vercel analysis
     [
       "script",
       {
@@ -15,6 +16,19 @@ export default defineConfig({
         src: "https://cdn.vercel-insights.com/_vercel/insights/script.js",
         // src: "/_vercel/insights/script.js",
       },
+    ],
+    //Google analysis
+    [
+      "script",
+      { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-0W16SW7JTM" },
+    ],
+    [
+      "script",
+      {},
+      `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0W16SW7JTM');`,
     ],
     // ['link', { rel: 'icon', href: '/favion.ico' }]
   ],
