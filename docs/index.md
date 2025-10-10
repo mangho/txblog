@@ -19,7 +19,7 @@ features:
   - title: Vue
     details: 熟练掌握vue2, vue3, uniapp,axios, pinia, ElementUI, ant design, echarts
   - title: DevOps
-    details: docker, jenkins, stable diffusion, chatGPT
+    details: docker, jenkins, express,nodejs
   - title: formily
     details: 熟练掌握formily动态表单用法，分离业务层与UI层
 ---
