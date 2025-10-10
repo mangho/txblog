@@ -66,7 +66,7 @@ export default defineConfig({
     ],
     footer: {
       message:
-        '<a href="https://vitepress.dev" target="blank">vitepress</a> 驱动 | <a href="https://vercel.com" target="blank">vercel</a> 部署',
+        '<a href="https://vitepress.dev" target="blank">vitepress</a> 构建 | <a href="https://vercel.com" target="blank">vercel</a> 托管',
       copyright: "Copyright © 2022-present Mangho",
     },
     socialLinks: [
