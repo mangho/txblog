@@ -27,7 +27,7 @@ features:
 ::: tip 案例
 
 - [formily 动态表单](//formily.mangho.top){target="_blank"}
-- [网站改版](//revision.mangho.top){target="_blank"}
+<!-- - [网站改版](//revision.mangho.top){target="_blank"} -->
 - ~~[uniapp 电商APP](/)~~(待上传)
 - ~~[three.js 室内三维](/)~~(待上传)
 <!-- - ~~[uniapp 电商](//bbyx.mangho.top)~~(待上传)
