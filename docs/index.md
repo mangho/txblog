@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: 'Mangho'
-  text: 'blog'
-#   tagline: 优 雅 码， 庸 俗 活
+  name: "Mangho"
+  text: "blog"
+  #   tagline: 优 雅 码， 庸 俗 活
   tagline: Code with grace, Live with gusto.
   actions:
     - theme: brand
@@ -26,9 +26,9 @@ features:
 
 ::: tip 案例
 
-- [formily 动态表单](//formily.mangho.top){target="_blank"}
+- [formily 动态表单](//formily.mangho.top){target="\_blank"}
 <!-- - [网站改版](//revision.mangho.top){target="_blank"} -->
-- ~~[uniapp 电商APP](/)~~(待上传)
+- [uniapp 电商 APP](/uniapp.mangho.top){target="\_blank"}
 - ~~[three.js 室内三维](/)~~(待上传)
 <!-- - ~~[uniapp 电商](//bbyx.mangho.top)~~(待上传)
 - ~~[three.js 室内](//threejs.mangho.top)~~(待上传) -->
