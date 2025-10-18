@@ -54,12 +54,14 @@ export default defineConfig({
         items: [
           { text: "docker开发环境下vite热重载无效", link: "/docker-vite" },
           { text: "磁盘结构损坏且无法读取", link: "/disk-damage" },
+          { text: "PC端与移动端的触摸事件兼容处理", link: "/mouse-pointer" },
         ],
       },
       {
         text: "技术要掌握",
         items: [
           { text: "Volta对于Node.js的妙用", link: "/volta-node-switch" },
+          { text: "Express模块推荐组合", link: "/express-module" },
           { text: "用vue做一个DAPP", link: "/vue-dapp" },
         ],
       },
