@@ -26,9 +26,10 @@ features:
 
 ::: tip 案例
 
-- [formily 动态表单](//formily.mangho.top){target="_blank"}
-- [网站改版](//revision.mangho.top){target="_blank"}
-- [uniapp拼购APP](//uniapp.mangho.top){target="_blank"}
+- [echart 数据分析系统(账号密码 - test:123456)](//tx.mangho.top/admin/){target="\_blank"}
+- [formily 动态表单](//formily.mangho.top){target="\_blank"}
+- [网站改版](//revision.mangho.top){target="\_blank"}
+- [uniapp 拼购 APP](//uniapp.mangho.top){target="\_blank"}
 - ~~[three.js 室内三维](/)~~(待上传)
 <!-- - ~~[uniapp 电商](//bbyx.mangho.top)~~(待上传)
 - ~~[three.js 室内](//threejs.mangho.top)~~(待上传) -->

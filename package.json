@@ -4,9 +4,9 @@
     "vitepress": "^1.6.4"
   },
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "doc:dev": "vitepress dev docs",
+    "doc:build": "vitepress build docs",
+    "doc:preview": "vitepress preview docs"
   },
   "dependencies": {
     "vitepress-test": "file:"
