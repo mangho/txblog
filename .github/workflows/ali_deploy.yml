@@ -14,21 +14,21 @@ jobs:
       # Node + pnpm
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
           cache: pnpm
 
       - run: corepack enable
 
       - uses: pnpm/action-setup@v3
         with:
-          version: 10
+          version: 8
           run_install: false
 
       # 构建
       - run: pnpm install --frozen-lockfile
-      - run: pnpm docs:build   # 或 pnpm build，看你脚本
+      - run: pnpm docs:build
 
-      # 上传静态文件（直接覆盖）
+      # 上传静态文件
       - name: Upload dist
         uses: appleboy/scp-action@v0.1.7
         with:
