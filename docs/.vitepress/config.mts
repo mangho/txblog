@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Mangho Blog",
   description: "mangho的后花园",
   cleanUrls: true,
+  outDir: "../dist",
   head: [
     ["link", { rel: "icon", type: "image/svg+xml", href: "/vite.svg" }],
     //vercel analysis
