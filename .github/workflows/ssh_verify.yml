@@ -1,4 +1,4 @@
-name: 验证 SSH 并部署 VitePress
+name: verify SSH
 
 on:
   push:
