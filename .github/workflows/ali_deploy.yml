@@ -22,7 +22,7 @@ jobs:
 
       # 构建
       - run: pnpm install --frozen-lockfile
-      - run: pnpm docs:build
+      - run: pnpm doc:build
 
       # 上传静态文件
       - name: Upload dist
