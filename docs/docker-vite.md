@@ -1,14 +1,15 @@
+# docker开发环境下vite热重载无效
 在用 `Docker` 部署前端开发环境时，Vite 的热重载（HMR）会失效，这是因为 Docker 容器的网络和文件系统设置可能导致一些问题。在搜索了大量资料之后，终于在 stackoverflow 找到了答案：
 
-### 常见原因
+## 常见原因
 
 1. **网络配置问题**：Docker 容器默认使用桥接网络，可能导致 Vite 的热重载请求无法正确路由到主机。
 2. **文件系统问题**：在 Docker 中挂载卷（volume）时，文件系统的变化可能无法正确传递到容器内的文件监听器。
 3. **Vite 配置问题**：Vite 需要配置一些选项来适应 Docker 环境，比如指定主机和端口。
 
-### 解决方案
+## 解决方案
 
-#### 1. 配置 Vite 以适应 Docker 环境
+### 1. 配置 Vite 以适应 Docker 环境
 
 在 `vite.config.js` 中配置服务器选项：
 
@@ -26,7 +27,7 @@ export default defineConfig({
 })
 ```
 
-#### 2. Dockerfile 和 Docker Compose 配置
+### 2. Dockerfile 和 Docker Compose 配置
 
 创建或修改 `Dockerfile`：
 
@@ -70,7 +71,7 @@ services:
     command: bash -c "npm && npm run dev"  
 ```
 
-#### 3. 启动容器
+### 3. 启动容器
 
 运行 Docker 容器：
 
@@ -78,7 +79,7 @@ services:
 docker-compose up
 ```
 
-### 详细解释
+## 详细解释
 
 1. **监听所有地址**：通过在 Vite 的配置文件中设置 `host: '0.0.0.0'`，Vite 会监听所有网络接口，这允许 Docker 容器内部的服务对外部（宿主机）可见。
 2. **使用轮询**：Docker 的文件系统挂载可能不支持文件事件，使用 `usePolling: true` 可以强制 Vite 使用轮询来检测文件变化，尽管这样会更耗资源，但能确保热重载功能正常工作。

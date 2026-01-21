@@ -1,25 +1,14 @@
 {
-  "name": "mtxpress",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+  "name": "vitepress-test",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
   },
-  "volta": {
-    "node": "18.20.0",
-    "yarn": "4.2.2"
+  "scripts": {
+    "doc:dev": "vitepress dev docs",
+    "doc:build": "vitepress build docs",
+    "doc:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "vue": "^3.4.27"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vitepress": "^1.2.2",
-    "vue-tsc": "^2.0.6"
+    "vitepress-test": "file:"
   }
 }

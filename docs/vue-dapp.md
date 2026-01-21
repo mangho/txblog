@@ -1,13 +1,13 @@
 要用 Vue.js 开发一个 Dapp 应用，需要结合以太坊等区块链平台和智能合约来实现。以下是简单指南
-
-### 前置准备
+# 用vue做一个DAPP
+## 前置准备
 
 1. **Node.js 和 npm**：确保已安装 Node.js 和 npm。
 2. **Vue CLI**：通过 `npm install -g @vue/cli` 安装 Vue CLI。
 3. **MetaMask**：安装 MetaMask 插件，用于浏览器中连接以太坊网络。
 4. **Truffle 或 Hardhat**：用于开发和部署智能合约。
 
-### 步骤 1：创建 Vue 项目
+## 步骤 1：创建 Vue 项目
 
 ```sh
 vue create my-dapp
@@ -16,7 +16,7 @@ cd my-dapp
 
 选择默认的 Vue 3 模板或其他模板。
 
-### 步骤 2：安装 Web3.js
+## 步骤 2：安装 Web3.js
 
 Web3.js 是一个与以太坊交互的 JavaScript 库。
 
@@ -24,7 +24,7 @@ Web3.js 是一个与以太坊交互的 JavaScript 库。
 npm install web3
 ```
 
-### 步骤 3：编写智能合约
+## 步骤 3：编写智能合约
 
 在项目中创建一个智能合约文件 `contracts/MyContract.sol`，示例如下：
 
@@ -45,7 +45,7 @@ contract MyContract {
 }
 ```
 
-### 步骤 4：部署智能合约
+## 步骤 4：部署智能合约
 
 使用 Truffle 或 Hardhat 部署合约。这里以 Truffle 为例：
 
@@ -71,7 +71,7 @@ module.exports = function (deployer) {
 truffle migrate
 ```
 
-### 步骤 5：连接 Vue.js 与智能合约
+## 步骤 5：连接 Vue.js 与智能合约
 
 在 `src` 目录下创建 `contracts` 文件夹，复制编译后的合约 ABI 文件（在 `build/contracts` 目录中生成）。
 
@@ -110,7 +110,7 @@ const instance = new web3.eth.Contract(MyContract.abi, contractAddress)
 export default instance
 ```
 
-### 步骤 6：编写 Vue 组件与合约交互
+## 步骤 6：编写 Vue 组件与合约交互
 
 在 `src/components` 下创建 `HelloBlockchain.vue` 组件：
 
@@ -148,7 +148,7 @@ export default {
 </script>
 ```
 
-### 步骤 7：集成组件到应用
+## 步骤 7：集成组件到应用
 
 在 `src/App.vue` 中集成组件：
 
@@ -170,7 +170,7 @@ export default {
 </script>
 ```
 
-### 步骤 8：运行项目
+## 步骤 8：运行项目
 
 ```sh
 npm run serve
@@ -178,6 +178,6 @@ npm run serve
 
 打开浏览器，连接 MetaMask 到正确的网络，可以看到 Dapp 应用运行并与智能合约交互。
 
-### 总结
+## 总结
 
 通过以上步骤学习使用 Vue.js 开发一个简单的 Dapp 应用。这只是一个基本的入门示例，实际项目可能会更复杂，需要考虑更多的安全性、用户体验等方面。
