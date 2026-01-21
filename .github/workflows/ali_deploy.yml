@@ -12,16 +12,14 @@ jobs:
       - uses: actions/checkout@v4
 
       # Node + pnpm
-      - uses: actions/setup-node@v4
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
+          cache: 'pnpm'
 
-      - name: Enable pnpm via corepack
-        run: |
-          corepack enable
-          corepack prepare pnpm@8.15.4 --activate
-          pnpm -v
+      - name: 安装 pnpm
+        run: npm install -g pnpm
 
       # 构建
       - run: pnpm install --frozen-lockfile
