@@ -31,14 +31,8 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          source: "docs/.vitepress/dist/*"
-          target: ${{ secrets.APP_PATH }}/dist
-
-      # reload nginx
-      - name: Reload nginx
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_KEY }}
-          script: docker exec nginx nginx -s reload
+          script: |
+            rm -rf ${{ secrets.APP_PATH }}/*
+            mkdir -p ${{ secrets.APP_PATH }}
+          scp: |
+            ./docs/.vitepress/dist/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.APP_PATH }}/
