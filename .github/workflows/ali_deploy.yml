@@ -16,16 +16,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
 
       - name: 安装 pnpm
-        run: |
-          # 官方 pnpm 安装脚本，自动配置环境变量
-          curl -fsSL https://get.pnpm.io/install.sh | sh -
-          # 手动加载 pnpm 环境变量（确保后续步骤能识别）
-          echo "export PATH=\$HOME/.local/share/pnpm:\$PATH" >> $GITHUB_ENV
-          # 验证 pnpm 安装成功
-          pnpm --version
+        run: npm install -g pnpm
 
       # 构建
       - run: pnpm install --frozen-lockfile
