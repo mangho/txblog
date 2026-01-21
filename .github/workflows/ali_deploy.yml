@@ -32,5 +32,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            rsync -av --delete docs/.vitepress/dist/** /opt/app/vitepress/
+            rm -rf ${{ secrets.APP_PATH }}/*
+          scp: |
+            ./docs/.vitepress/dist/** ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.APP_PATH }}/
             sudo docker exec nginx nginx -s reload
