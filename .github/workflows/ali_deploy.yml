@@ -1,0 +1,51 @@
+name: Build with pnpm
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # 1️ 安装 Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      # 2️ 启用 corepack（Node 16.9+ 自带）
+      - name: Enable corepack
+        run: corepack enable
+
+      # 3️ 安装 pnpm（版本可控）
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 8
+          run_install: false
+
+      # 4️ 安装依赖
+      - run: pnpm install --frozen-lockfile
+
+      # 5️ 构建
+      - run: pnpm build
+      - name: Upload build files
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "dist/*"
+          target: ${{ secrets.APP_PATH }}/dist
+
+      - name: Restart app
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            docker exec nginx nginx -s reload
