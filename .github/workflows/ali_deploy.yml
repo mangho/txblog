@@ -26,13 +26,19 @@ jobs:
 
       # 上传静态文件
       - name: Upload dist
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "docs/.vitepress/dist/**"
+          target: ${{ secrets.APP_PATH }}/
+
+      # reload nginx
+      - name: Reload nginx
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          script: |
-            rm -rf ${{ secrets.APP_PATH }}/*
-          scp: |
-            ./docs/.vitepress/dist/** ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.APP_PATH }}/
-            sudo docker exec nginx nginx -s reload
+          script: docker exec nginx nginx -s reload
