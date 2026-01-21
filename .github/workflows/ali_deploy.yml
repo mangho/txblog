@@ -30,7 +30,6 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
-          strict_host_key_checking: false
           script: |
             # 1. 定义备份目录和备份文件名（带时间戳，格式：YYYYMMDD_HHMMSS）
             BACKUP_DIR="/opt/app/vitepress/dist_backup"
