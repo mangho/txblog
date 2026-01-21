@@ -14,15 +14,14 @@ jobs:
       # Node + pnpm
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: pnpm
 
-      - run: corepack enable
-
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 8
-          run_install: false
+      - name: Enable pnpm via corepack
+        run: |
+          corepack enable
+          corepack prepare pnpm@8.15.4 --activate
+          pnpm -v
 
       # 构建
       - run: pnpm install --frozen-lockfile
