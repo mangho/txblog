@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to Aliyun
 
 on:
   push:
@@ -32,5 +32,5 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            rsync -av --delete docs/.vitepress/dist/ /opt/app/vitepress/
+            rsync -av --delete ./docs/.vitepress/dist/* /opt/app/vitepress/
             sudo docker exec nginx nginx -s reload
