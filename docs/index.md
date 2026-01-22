@@ -34,9 +34,6 @@ features:
   > 一个基于 vue3 的网站改版项目
 - [uniapp 拼购 APP](//uniapp.mangho.top){target="_blank"}
   > 一个基于 uniapp 的拼购 APP 项目
-- ~~[three.js 室内三维](/)~~(待上传) -->
+- ~~[three.js 室内三维](/)~~(待上传)
 
-
-<!-- - ~~[uniapp 电商](//bbyx.mangho.top)~~(待上传)
-- ~~[three.js 室内](//threejs.mangho.top)~~(待上传) -->
-  :::
+  ::: -->
