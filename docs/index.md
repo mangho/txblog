@@ -26,13 +26,13 @@ features:
 
 ::: tip 案例
 
-- [echart 数据分析系统(账号密码 - test:123456)](//macrosystem.mangho.top/){target="_blank"}
+- [echart 数据分析系统(账号密码 - test:123456)](//macrosystem.mengtx.top/){target="_blank"}
   > 一个基于 echart 的数据分析系统，nestjs 后端， vue3 前端
-- [formily 动态表单](//formily.mangho.top){target="_blank"}
+- [formily 动态表单](//formily.mengtx.top){target="_blank"}
   > 一个基于 formily 的动态表单系统，配置驱动，联动，校验，自由布局
-- [网站改版](//revision.mangho.top){target="_blank"}
+- [网站改版](//revision.mengtx.top){target="_blank"}
   > 一个基于 vue3 的网站改版项目
-- [uniapp 拼购 APP](//uniapp.mangho.top){target="_blank"}
+- [uniapp 拼购 APP](//uniapp.mengtx.top){target="_blank"}
   > 一个基于 uniapp 的拼购 APP 项目
 
   :::
