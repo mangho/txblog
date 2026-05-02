@@ -24,10 +24,10 @@ features:
     details: 熟练掌握formily动态表单用法，分离业务层与UI层
 ---
 
-::: tip 案例
+::: tip 案例(以下案例前后端全部个人开发+部署)
 
 - [echart 数据分析系统(账号密码 - test:123456)](//macrosystem.mengtx.top/){target="_blank"}
-  > 一个基于 echart 的数据分析系统，nestjs 后端， vue3 前端
+  > 一个基于 echart，antv g6，python flask，nestjs 的数据分析系统，nestjs+flask 后端， vue3 前端
 - [formily 动态表单](//formily.mengtx.top){target="_blank"}
   > 一个基于 formily 的动态表单系统，配置驱动，联动，校验，自由布局
 - [网站改版](//revision.mengtx.top){target="_blank"}

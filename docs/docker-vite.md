@@ -76,7 +76,7 @@ services:
 运行 Docker 容器：
 
 ```sh
-docker-compose up
+docker compose up -d
 ```
 
 ## 详细解释
