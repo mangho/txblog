@@ -26,7 +26,7 @@ features:
 
 ::: tip 案例(以下案例前后端全部个人开发+部署)
 
-- [echart 数据分析系统(账号密码 - test:123456)](//macrosystem.mengtx.top/){target="_blank"}
+- [echart 数据分析系统(账号密码 - test:123456 | admin:123456!)](//macrosystem.mengtx.top/){target="_blank"}
   > 一个基于 echart，antv g6，python flask，nestjs 的数据分析系统，nestjs+flask 后端， vue3 前端
 - [formily 动态表单](//formily.mengtx.top){target="_blank"}
   > 一个基于 formily 的动态表单系统，配置驱动，联动，校验，自由布局
